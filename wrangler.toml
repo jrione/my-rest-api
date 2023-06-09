@@ -1,0 +1,15 @@
+name = "new-worker"
+type = "javascript"
+
+account_id = ""
+workers_dev = true
+route = ""
+zone_id = ""
+compatibility_date = "2023-06-09"
+
+
+[env.s3]
+zone_id = ""
+route = ""
+vars = { "AWS_ACCESS_KEY_ID" = "", "AWS_REGION" = "", "AWS_S3_BUCKET" = "", "AWS_SECRET_ACCESS_KEY" = "" }
+# secrets = ["AWS_ACCESS_KEY_ID", "AWS_REGION", "AWS_S3_BUCKET", "AWS_SECRET_ACCESS_KEY"]
