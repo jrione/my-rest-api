@@ -1,5 +1,6 @@
 package-lock.json
 wranglerdev.toml
+worker/
 # Logs
 logs
 *.log
