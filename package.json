@@ -15,7 +15,9 @@
     "prettier": "^1.18.2"
   },
   "dependencies": {
+    "@cloudflare/wrangler": "^1.21.0",
     "dotenv": "^16.1.4",
-    "itty-router": "^4.0.9"
+    "itty-router": "^4.0.9",
+    "wrangler": "^2.0.0"
   }
 }
