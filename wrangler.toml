@@ -1,0 +1,14 @@
+name = "api"
+type = "javascript"
+
+account_id = ""
+workers_dev = true
+route = ""
+zone_id = ""
+compatibility_date = "2023-06-09"
+compatibility_flags = [ "nodejs_compat" ]
+
+
+[vars]
+status = 'env variable already deployed'
+
