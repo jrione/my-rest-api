@@ -4,11 +4,11 @@ on:
     branches:
       - s3
 env:
-  region: ${{ secrets.REGION }}
-  secret_key: ${{ secrets.SECRET_KEY }}
-  access_key: ${{ secrets.ACCESS_KEY }}
-  endpoint_url: ${{ secrets.ENDPOINT_URL }}
-  bucket_name: ${{ secrets.BUCKET_NAME }}
+  region: ${{ secrets.S3_REGION }}
+  secret_key: ${{ secrets.S3_SECRET_KEY }}
+  access_key: ${{ secrets.S3_ACCESS_KEY }}
+  endpoint_url: ${{ secrets.S3_ENDPOINT_URL }}
+  bucket_name: ${{ secrets.S3_BUCKET_NAME }}
 
 jobs:
   deploykeun:
