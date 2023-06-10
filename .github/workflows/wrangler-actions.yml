@@ -8,9 +8,26 @@ jobs:
     runs-on: ubuntu-latest
     name: Deploy
     steps:
+      - name: checkout
       - uses: actions/checkout@v2
+
+      - name: Inject secret.REGION
+        command: sed -i 's/1/${{secret.REGION}}/g' wrangler.toml
+
+      - name: Inject secret.SECRET_KEY
+        command: sed -i 's/1/${{secret.SECRET_KEY}}/g' wrangler.toml
+
+      - name: Inject secret.ACCESS_KEY
+        command: sed -i 's/1/${{secret.ACCESS_KEY}}/g' wrangler.toml
+
+      - name: Inject secret.ENDPOINT_URL
+        command: sed -i 's/1/${{secret.ENDPOINT_URL}}/g' wrangler.toml
+
+      - name: Inject secret.BUCKET_NAME
+        command: sed -i 's/1/${{secret.BUCKET_NAME}}/g' wrangler.toml
+
       - name: Publish
         uses: cloudflare/wrangler-action@1.1.0
         with:
           apiToken: ${{ secrets.CF_API_TOKEN }}
-          command: publish -c wranglerprod.yml
+          command: publish
