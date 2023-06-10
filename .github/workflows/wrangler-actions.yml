@@ -18,11 +18,11 @@ jobs:
       - uses: actions/checkout@v2
       - name: Inject secret
         run: |
-          sed -i 's|iniregion|$region|g' wrangler.toml
-          sed -i 's|inisecret|$secret_key|g' wrangler.toml
-          sed -i 's|iniaccess|$access_key|g' wrangler.toml
-          sed -i 's|iniendpoint|$endpoint_url|g' wrangler.toml
-          sed -i 's|inibcuketname|$bucket_name|g' wrangler.toml
+          sed -i "s|iniregion|$region|g" wrangler.toml
+          sed -i "s|inisecret|$secret_key|g" wrangler.toml
+          sed -i "s|iniaccess|$access_key|g" wrangler.toml
+          sed -i "s|iniendpoint|$endpoint_url|g" wrangler.toml
+          sed -i 's|inibucketname|$bucket_name|g' wrangler.toml
       - name: Publish
         uses: cloudflare/wrangler-action@1.1.0
         with:
