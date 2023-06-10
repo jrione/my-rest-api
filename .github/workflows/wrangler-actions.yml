@@ -14,5 +14,4 @@ jobs:
         with:
           apiKey: ${{ secrets.CF_API_KEY }}
           email: ${{ secrets.CF_EMAIL }}
-        wranglerVersion: '1.21.0'
-        command: publish 
+          command: publish 
