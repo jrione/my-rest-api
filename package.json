@@ -1,0 +1,21 @@
+{
+  "private": true,
+  "name": "api",
+  "version": "1.0.0",
+  "description": "ngok",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "format": "prettier --write '**/*.{js,css,json,md}'"
+  },
+  "author": "Pajri Zahrawaani Ahmad <pajriblueholigand@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "prettier": "^1.18.2"
+  },
+  "dependencies": {
+    "dotenv": "^16.1.4",
+    "itty-router": "^4.0.9"
+  }
+}

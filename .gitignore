@@ -1,8 +1,5 @@
-<<<<<<< HEAD
-node_modules/
-package.json
-package.lock
-=======
+package-lock.json
+wrangler.toml
 # Logs
 logs
 *.log
@@ -133,4 +130,3 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
->>>>>>> 541b23f8429103404f7709890f29b929c20885d6
