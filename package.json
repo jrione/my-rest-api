@@ -1,23 +1,19 @@
 {
-  "private": true,
-  "name": "api",
+  "name": "wrangler",
   "version": "1.0.0",
-  "description": "ngok",
+  "description": "",
   "main": "index.js",
-  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "format": "prettier --write '**/*.{js,css,json,md}'"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Pajri Zahrawaani Ahmad <pajriblueholigand@gmail.com>",
-  "license": "MIT",
-  "devDependencies": {
-    "prettier": "^1.18.2"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jurizama/my-rest-api.git"
   },
-  "dependencies": {
-    "@cloudflare/wrangler": "^1.21.0",
-    "dotenv": "^16.1.4",
-    "itty-router": "^4.0.9",
-    "wrangler": "^2.0.0"
-  }
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jurizama/my-rest-api/issues"
+  },
+  "homepage": "https://github.com/jurizama/my-rest-api#readme"
 }
