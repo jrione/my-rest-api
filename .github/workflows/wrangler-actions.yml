@@ -15,16 +15,16 @@ jobs:
         command: sed -i 's/1/${{secret.REGION}}/g' wrangler.toml
 
       - name: Inject secret.SECRET_KEY
-        command: sed -i 's/1/${{secret.SECRET_KEY}}/g' wrangler.toml
+        command: sed -i 's/2/${{secret.SECRET_KEY}}/g' wrangler.toml
 
       - name: Inject secret.ACCESS_KEY
-        command: sed -i 's/1/${{secret.ACCESS_KEY}}/g' wrangler.toml
+        command: sed -i 's/3/${{secret.ACCESS_KEY}}/g' wrangler.toml
 
       - name: Inject secret.ENDPOINT_URL
-        command: sed -i 's/1/${{secret.ENDPOINT_URL}}/g' wrangler.toml
+        command: sed -i 's/4/${{secret.ENDPOINT_URL}}/g' wrangler.toml
 
       - name: Inject secret.BUCKET_NAME
-        command: sed -i 's/1/${{secret.BUCKET_NAME}}/g' wrangler.toml
+        command: sed -i 's/5/${{secret.BUCKET_NAME}}/g' wrangler.toml
 
       - name: Publish
         uses: cloudflare/wrangler-action@1.1.0
