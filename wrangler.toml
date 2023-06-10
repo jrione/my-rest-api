@@ -8,8 +8,8 @@ zone_id = ""
 compatibility_date = "2023-06-09"
 	
 [vars]
-REGION_NAME = '1'
-SECRET_ACCESS_KEY = '2'
-ACCESS_KEY_ID = '3'
-ENDPOINT_URL = '4'
-BUCKET_NAME = '5'
+REGION_NAME = 'iniregion'
+SECRET_ACCESS_KEY = 'inisecret'
+ACCESS_KEY_ID = 'iniaccess'
+ENDPOINT_URL = 'iniendpoint'
+BUCKET_NAME = 'inibucketname'
