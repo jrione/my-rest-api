@@ -6,8 +6,7 @@ workers_dev = true
 route = ""
 zone_id = ""
 compatibility_date = "2023-06-09"
-
-
+	
 [vars]
 REGION_NAME = '1'
 SECRET_ACCESS_KEY = '2'
