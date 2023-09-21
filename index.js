@@ -12,7 +12,7 @@ addEventListener('fetch', event => {
 
 class _status {
     constructor(explain,code){
-        rstatus = {status: code}
+        var rstatus = {status: code}
         return new Response(JSON.stringify(explain),rstatus)
     }
 }
@@ -48,7 +48,6 @@ async function handleRequest(request) {
                         body: "NGORONG"
                     })
                     rval = JSON.stringify({'status':file})
-                    rstatus= {status: 200}
                     break
                 default:
                     rval = JSON.stringify({'status':'korong'})
