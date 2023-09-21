@@ -48,6 +48,7 @@ async function handleRequest(request) {
                         body: "NGORONG"
                     })
                     rval = JSON.stringify({'status':file})
+                    rstatus= {status: 200}
                     break
                 default:
                     rval = JSON.stringify({'status':'korong'})
